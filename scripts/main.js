@@ -2,10 +2,17 @@
 
 //Crea un objeto en la variable ordenador de tal modo que el siguiente código no muestre por consola 'suspendes':
 const ordenador = {
-    marca: "Asus"
-    tipo: "portátil"
-    perifericos: "touchpad"
-
+    marca: "Asus",
+    tipo: "portátil",
+    perifericos: {
+        touchpad: true
+    },
+    almacenamiento:{ 
+        discos:['SSD','hdd','ram'],
+    },
+    procesador:{
+        velocidad: "2.5 GHz",
+    }
     
 }
 
@@ -54,8 +61,38 @@ const ordenador = {
 //EJERCICIOS BUCLES
 
 //*Imprimir los números del 21 al 34 en la consola.
+    
+for (let i = 21; i <= 34; i++){
+    console.log(i);
+}
+
 //*Sumar los números del 1 al 10 y mostrar el resultado en la consola.
+    //1 -Crear array vacio
+    const arrayNumeros = []
+    //2 -Rellenar array
+    for (let i = 1; i <=10; i++) {
+        arrayNumeros.push(i);
+        console.log(arrayNumeros)
+    }
+    //3 -crear variable para resultado suma
+    let sumaArray = 0
+    //4 -sumar array
+    for (let i = 0; i < arrayNumeros.length; i++) {
+        sumaArray += arrayNumeros[i];
+        console.log(sumaArray)
+    }
+    //5 -Nota: si no queremos que muetren en cada iteración los valores, sacamos fuera del bucle al "console.log)"
+
 //*Dado un array de números, imprimir en la consola la suma de todos los números.
+        //1-definir la longitud del array con PROMPT
+    const arraylongitud = prompt("Introduce longitud array")
+
+        //2-definir los valores con PROMPT
+    for (let i = 0; i <= arraylongitud; i++) {
+        prompt(`Añade el valor${i}`) = array[i];
+    }
+        //3-sumar los valores
+
 //*Dado un número, encontrar su factorial.
 //*Dado un array de números, imprimir en la consola solo los números impares.
 //*Dado un array de objetos con propiedades "nombre" y "edad", imprimir en la consola solo los nombres de las personas mayores de 18 años.
