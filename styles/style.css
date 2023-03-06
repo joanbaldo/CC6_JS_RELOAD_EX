@@ -1,0 +1,27 @@
+/*CONFIGURACIÓN INICIAL Y RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+html{
+    font-size: 16px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Space+Mono&display=swap'); 
+:root{
+    --gris1: rgb(124, 124, 124);
+    --gris2: rgb(98, 97, 97);
+}
+body{
+    width: 800px;
+    margin: 0 auto; 
+}
+*{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Mono', monospace;
+   }   
+/* h1{
+    color: brown;
+} */

@@ -1,6 +1,14 @@
 //EJERCICIO CONDICIONES Y OBJETOS jercicios Condiciones y Objetos/Arrays
 
 //Crea un objeto en la variable ordenador de tal modo que el siguiente código no muestre por consola 'suspendes':
+const ordenador = {
+    marca: "Asus"
+    tipo: "portátil"
+    perifericos: "touchpad"
+
+    
+}
+
 // TEST 1
   if (typeof ordenador === "object") {
     console.log("apruebas");
@@ -115,22 +123,23 @@ eliminarDuplicados(["hola", "adios", "hola", "hasta", "luego"]); // Devuelve ["h
 sumarElementos([1, 2, 3, 4, 5]); // Devuelve 15
 sumarElementos([-5, 10, -15, 20]); // Devuelve 10
 
-*Crea una función en contarCaracteres(array) que reciba como parámetro un array de cadenas de caracteres y devuelva la cantidad total de caracteres que hay en todas las cadenas juntas. Puedes utilizar un ciclo for...of para recorrer el array y contar los caracteres.
+//*Crea una función en contarCaracteres(array) que reciba como parámetro un array de cadenas de caracteres y devuelva la cantidad total de caracteres que hay en todas las cadenas juntas. Puedes utilizar un ciclo for...of para recorrer el array y contar los caracteres.
 
 contarCaracteres(["Hola", "Mundo"]); // Devuelve 8
 contarCaracteres(["JavaScript", "es", "genial"]); // Devuelve 17
 
-*Crea una función llamada numeroMasGrande(array) que reciba como parámetro un array de números y devuelva el número más grande de ese array. Puedes utilizar un ciclo for...of para recorrer el array y condicionales para encontrar el número más grande.
+//*Crea una función llamada numeroMasGrande(array) que reciba como parámetro un array de números y devuelva el número más grande de ese array. Puedes utilizar un ciclo for...of para recorrer el array y condicionales para encontrar el número más grande.
 
 numeroMasGrande([1, 2, 3, 4, 5]); // Devuelve 5
 numeroMasGrande([10, -5, 20, -15]); // Devuelve 20
 
-*Crea una función llamada cadenaMasLarga(array) que reciba como parámetro un array de cadenas de caracteres y devuelva la cadena más larga de ese array. Puedes utilizar un ciclo for...of para recorrer el array y condicionales para encontrar la cadena más larga.
+//*Crea una función llamada cadenaMasLarga(array) que reciba como parámetro un array de cadenas de caracteres y devuelva la cadena más larga de ese array. Puedes utilizar un ciclo for...of para recorrer el array y condicionales para encontrar la cadena más larga.
 
 cadenaMasLarga(["Hola", "Mundo"]); // Devuelve "Mundo"
 cadenaMasLarga(["JavaScript", "es", "genial"]); // Devuelve "JavaScript"
 
-Ejercicio Suscripción a Newsletter
+/*EJERCICIO SUSCRIPCION A NEWSLETTER
+
 Crea una vista "Suscripción a Newsletter" que contenga un formulario con los siguientes campos: Nombre, Dirección de correo electrónico, Intereses (checkboxes) y Tipo de suscripción (radio buttons). El objetivo de este formulario es recoger la información del usuario y guardarla en localStorage.
 Para garantizar que se recopilan todos los datos necesarios, se debe implementar una validación que obligue al usuario a completar todos los campos del formulario. También es importante realizar una validación de la dirección de correo electrónico, para asegurarse de que se ha introducido una dirección válida.
 Si alguna de las validaciones no se cumple, se debe mostrar un mensaje de error durante 3 segundos y luego desaparecer. Si el usuario completa correctamente todos los campos del formulario, se debe mostrar un mensaje de éxito durante 3 segundos y redirigir a la vista de confirmación de suscripción. Para mostrar los mensajes, se pueden utilizar los alertas de Bootstrap.
@@ -141,4 +150,4 @@ Crea una vista Newsletter y muestra en esa página la Newsletter que habías gua
 Ejercicio Newsletter nivel 2
 
 Modifica tu formulario de Newsletter para que puedas guardar varias newsletters. Cada vez que escribas una nueva newsletter, guárdala en un array junto con las anteriores. 
-Después, muestra todas las newsletters en la vista de Newsletter, de forma que se puedan leer todas ellas.
+Después, muestra todas las newsletters en la vista de Newsletter, de forma que se puedan leer todas ellas.*/
