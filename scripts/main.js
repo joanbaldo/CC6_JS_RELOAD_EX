@@ -87,11 +87,15 @@ for (let i = 21; i <= 34; i++){
         //1-definir la longitud del array con PROMPT
     const arraylongitud = prompt("Introduce longitud array")
 
-        //2-definir los valores con PROMPT
-    for (let i = 0; i <= arraylongitud; i++) {
-        prompt(`Añade el valor${i}`) = array[i];
+        //2-definir variable que contendrá el array que posteriormente sumaremos
+        let sumArray = []
+    
+        //3-definir los valores con PROMPT
+    for (let i = 0; i <= (arraylongitud -1); i++) {
+        prompt(`Añade el valor${i+1}`) = sumArray.push[i];
+        console.log()
     }
-        //3-sumar los valores
+        //4-sumar los valores
 
 //*Dado un número, encontrar su factorial.
 //*Dado un array de números, imprimir en la consola solo los números impares.
